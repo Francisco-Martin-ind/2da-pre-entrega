@@ -1,155 +1,156 @@
+@charset "UTF-8";
 /* reset */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* estilos del header */
-
-header{
-    background-color: rgb(187, 18, 18);
+header {
+  background-color: rgb(187, 18, 18);
+}
+header div h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header div h1 p {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+header div nav .red-bg {
+  background-color: rgb(187, 18, 18);
+  width: 100%;
 }
 
-header div h1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.independiente-a{
-    font-size: 50px;
-
+footer {
+  background-color: rgb(187, 18, 18);
+  text-align: center;
+  padding: 1.5rem;
 }
 
-/* fuente letra header */
+section {
+  padding: 1.8rem 1.8rem;
+  background-color: rgba(221, 205, 205, 0.829);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+section div img {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  margin-left: 60px;
+}
+section div h2 {
+  position: relative;
+  margin-left: 65px;
+  font-size: 20px;
+}
 
-header p{
+.historia {
+  background-color: rgba(221, 205, 205, 0.829);
+  display: flex;
+  flex-direction: column;
+}
+.historia img {
+  width: 100%;
+}
+.historia h1 {
+  text-align: center;
+}
+
+.trofeos {
+  background-color: rgba(221, 205, 205, 0.829);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trofeos img {
+  width: 100%;
+}
+.trofeos p {
+  text-align: center;
+}
+
+.ubi {
+  background-color: rgba(221, 205, 205, 0.829);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ubi h1 {
+  text-align: center;
+  font-size: large;
+}
+.ubi img {
+  width: 100%;
+}
+.ubi iframe {
+  width: 80%;
+}
+
+.bochini {
+  background-color: rgba(221, 205, 205, 0.829);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bochini p {
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  header p {
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
-}
-
-.red-bg{
-    background-color: rgb(187, 18, 18);
-    width: 100%;
-}
-
-/* estilos del main */
-main{
-    background-color: white;
-}
-
-/* estilos del section */
-
-section{
-    padding: 1.8rem 1.8rem;
-    background-color:rgba(221, 205, 205, 0.829);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    align-items: center;
-    justify-items: center;
-}
-section div img{
-    width: 50%;
-    height: 50%;
-    position: relative;
-    margin-left: 60px;
-}
-
-section div h2{
-    position: relative;
-    margin-left:65px;
-    font-size: 20px;
-}
-
-/* estilos del footer */
-
-footer{
-    background-color: rgb(187, 18, 18);
-    text-align: center;
-    padding: 1.5rem;
-}
-
-@media screen and (min-width:1024px){
-
-    /* letra independiente */
-    .independiente-a{
-        font-size: 100px;
-        padding: 1rem;
-    }
-
-
-    header p{
-        font-family: "Anton", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 60px;
-    }
-
-    section{
-        grid-template-rows: 1fr;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-    /* web historia */
-
-    .video-historia{
-        width: 1900px;
-        height: 900px;
-    }
-    
-    /* estilos del main trofeos */
-    .trofeos{
-        background-color:rgba(221, 205, 205, 0.829);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .copas{
-        width: 1600px;
-    }
-
-    /* estilos del main ubicación */
-    .ubi{
-        background-color:rgba(221, 205, 205, 0.829);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    /* estilos del main bochini */
-    .bochini{
-        background-color:rgba(221, 205, 205, 0.829);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .video-bocha{
-        width: 1900px;
-        height: 900px;
-    }
-
-
-}
-
-/* estilos del main historia */
-
-.historia{
-    background-color:rgba(221, 205, 205, 0.829);
+    font-size: 100px;
+    padding: 1rem;
+  }
+  section {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .video-historia {
+    width: 1900px;
+    height: 900px;
+  }
+  /* estilos del main trofeos */
+  .trofeos {
+    background-color: rgba(221, 205, 205, 0.829);
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .trofeos img {
+    width: 1600px;
+  }
+  /* estilos del main ubicación */
+  .ubi {
+    background-color: rgba(221, 205, 205, 0.829);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* estilos del main bochini */
+  .bochini {
+    background-color: rgba(221, 205, 205, 0.829);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bochini .video-bocha {
+    width: 60%;
+  }
+  .video-bocha {
+    width: 1900px;
+    height: 900px;
+  }
 }
 
-/* imagenes */
-
-.historia img{
-    width: 100%;
-}
-
-/* texto */
-.historia h1 {
-    text-align: center;
-}
-
+/*# sourceMappingURL=main.css.map */

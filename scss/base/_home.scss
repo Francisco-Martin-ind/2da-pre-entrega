@@ -1,0 +1,163 @@
+//import de variables
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+// estilos de header 
+
+header{
+    background-color: $color-principal;
+    div{
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p{
+                font-family: "Anton", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 50px;  
+            }
+        }
+        nav{
+            .red-bg{
+                background-color: $color-principal;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// estilos del footer
+
+footer{
+    background-color: $color-principal;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+//estilos del section index
+
+section{
+    padding: 1.8rem 1.8rem;
+    background-color:$color-secundario;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    div{
+        img{
+            width: 50%;
+            height: 50%;
+            position: relative;
+            margin-left: 60px;  
+        }
+        h2{
+            position: relative;
+            margin-left:65px;
+            font-size: 20px;
+        }
+    }
+}
+
+// estilos del main historia
+.historia{
+    background-color:$color-secundario;
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+//estilos del main trofeos 
+
+.trofeos{
+    background-color:$color-secundario;
+    @include flex;
+    img{
+        width: 100%;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+//estilos del main ubicacion
+.ubi{
+    background-color:$color-secundario;
+    @include flex;
+    h1{
+        text-align: center;
+        font-size: large;
+    }
+    img{
+        width: 100%;
+    }
+    iframe{
+        width: 80%;
+    }
+}
+
+//estilos del main bochini
+
+.bochini{
+    background-color:$color-secundario;
+    @include flex;
+    p{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1024px){
+    header{
+        p{
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 100px;
+            padding: 1rem;
+        }
+    }
+    section{
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    //video historia
+
+    .video-historia{
+        width: 1900px;
+        height: 900px;
+    }
+
+    /* estilos del main trofeos */
+
+    .trofeos{
+        background-color:$color-secundario;
+        @include flex;
+        img{
+            width: 1600px;
+        }
+    }
+
+    /* estilos del main ubicación */
+    .ubi{
+        background-color:$color-secundario;
+        @include flex;
+    }
+    /* estilos del main bochini */
+    .bochini{
+        background-color:$color-secundario;
+        @include flex;
+        .video-bocha{
+            width: 60%;
+        }
+    }
+    .video-bocha{
+        width: 1900px;
+        height: 900px;
+    }
+}
